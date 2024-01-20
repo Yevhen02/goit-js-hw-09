@@ -1,5 +1,9 @@
-/* TASK 2 */
-/* ........................... */
+body {
+  max-width: 950px;
+  margin: 0 auto;
+  background-color: #756ab6;
+}
+
 .gallery {
   padding: 2px 0 2px 0;
   max-width: 100%;
@@ -9,14 +13,33 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
+  padding: 0;
+  list-style: none;
 }
 
 .gallery li {
-  width: 30%;
+  text-decoration: none;
+  width: 31%;
 }
 
 .gallery img {
   display: block;
   width: 100%;
   object-fit: cover;
+  border: 1px solid #ffe5e5;
+  box-shadow: 3px 3px 5px #d2e3c8;
+}
+
+.go-home-link {
+  text-decoration: none;
+  color: #ffe5e5;
+  transition: allease 250ms;
+}
+
+.go-home-link:hover {
+  border-bottom: 1px solid #ffe5e5;
+}
+
+.go-home-link::before {
+  content: '<- ';
 }

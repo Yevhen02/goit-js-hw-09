@@ -1,11 +1,20 @@
 .header {
-  padding: 20px 0;
+  width: 100%;
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-heading {
+  color: #f9efdb;
 }
 
 .nav-list {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   gap: 40px;
 }
 
@@ -13,9 +22,13 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  font-size: 24px;
+  color: #ebd9b4;
+
+  transition: all 250ms ease;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #747bff;
+  color: #f9efdb;
 }
