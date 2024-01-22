@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (storedLocStorData) {
     const { email, message } = JSON.parse(storedLocStorData);
     // emailInput.value = email ?? '';
-    emailInput.value = email === '';
+    emailInput.value = email || '';
 
     // messageInput.value = message ?? '';
-    messageInput.value = message === '';
+    messageInput.value = message || '';
   }
 });
 
@@ -37,11 +37,15 @@ form.addEventListener('submit', event => {
   const currentLocStorData = JSON.parse(
     localStorage.getItem('feedback-form-state')
   );
+
   console.log(currentLocStorData);
 
   localStorage.removeItem('feedback-form-state');
-  emailInput.value = '';
-  messageInput.value = '';
+
+  // emailInput.value = '';
+  // emailInput.value = email || '';
+  // messageInput.value = '';
+  // messageInput.value = message || '';
 });
 
 // SETUP TO EXPORT BY DEFAULT

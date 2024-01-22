@@ -104,7 +104,7 @@ new SimpleLightbox('.gallery a', {
   captions: true,
   captionsData: 'alt',
   captionPosition: 'bottom',
-  captionDelay: 0,
+  captionDelay: 250,
 });
 
 export default {};
